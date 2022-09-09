@@ -202,12 +202,9 @@ let time = setInterval(function(event) {
         localStorage.clear();
     }
 
-    console.log(currT);
-    console.log(AMPM);
-    
+
 
 }, 1);
-
 
 
 $('.lock').click(function() {
