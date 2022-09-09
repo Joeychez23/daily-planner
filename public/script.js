@@ -8,17 +8,17 @@ function setData() {
         val[i] = JSON.parse(localStorage.getItem(localStorage.key(i)));
         console.log(val[i]);
     }
-    if(localStorage.length < 1) {
+    if(localStorage.length != 1) {
         val[0] = {
-            AM9: "",
-            AM10: "",
-            AM11: "",
-            PM12: "",
-            PM1: "",
-            PM2: "",
-            PM3: "",
-            PM4: "",
-            PM5: "",
+            AM9: " ",
+            AM10: " ",
+            AM11: " ",
+            PM12: " ",
+            PM1: " ",
+            PM2: " ",
+            PM3: " ",
+            PM4: " ",
+            PM5: " ",
         }
     }
 
