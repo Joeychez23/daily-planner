@@ -206,7 +206,7 @@ let time = setInterval(function(event) {
     console.log(AMPM);
     
 
-}, 1000);
+}, 1);
 
 
 
