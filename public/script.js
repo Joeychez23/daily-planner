@@ -11,15 +11,15 @@ function setData() {
     if(localStorage.length != 1) {
         localStorage.clear();
         val[0] = {
-            AM9: " ",
-            AM10: " ",
-            AM11: " ",
-            PM12: " ",
-            PM1: " ",
-            PM2: " ",
-            PM3: " ",
-            PM4: " ",
-            PM5: " ",
+            AM9: "",
+            AM10: "",
+            AM11: "",
+            PM12: "",
+            PM1: "",
+            PM2: "",
+            PM3: "",
+            PM4: "",
+            PM5: "",
         }
     }
 
