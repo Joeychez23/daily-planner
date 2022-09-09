@@ -76,7 +76,7 @@ body {
 }
 
 #currDate {
-    margin-bottom: 75px;
+    margin-bottom: 25px;
 }
 
 .display-3 {
@@ -150,12 +150,38 @@ body {
     border-radius: 0px 15px 15px 0px;
 }
 
+.lock:hover {
+  opacity: 75%;
+}
+
 .input {
     border-left: 3px solid black;
     width: 100%;
     height: 100%;
     /*color: white;*/
     padding-left: 2.5%;
+}
+
+#clearBox {
+  display: flex;
+  justify-content: center;
+}
+
+#clear {
+  width: 12%;
+  height: 30px;
+  background-color: lightblue;
+  border-radius: 5px;
+}
+
+#clear:hover {
+  opacity: 75%;
+}
+
+@media screen and (max-width: 1180px) {
+  #clear {
+    width: 13%;
+  }
 }
 
 @media screen and (max-width: 850px) {
@@ -166,6 +192,9 @@ body {
         /*margin-top: 10px;*/
         /*border-top: 3px dotted grey;*/
     
+    }
+    #clear {
+      width: 15%;
     }
 }
 
@@ -189,5 +218,10 @@ body {
         padding-top: 30px;
     
     }
+    #clear {
+      width: 17%;
+    }
 }
+
+
   

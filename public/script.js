@@ -198,9 +198,13 @@ let time = setInterval(function(event) {
         timeN = true;
     }
     
+
+    //This would work if a server was running concurrently
     if(currT[0] == 12 && currT[1] == "00" && AMPM[0] == "00" && AMPM[1] == "AM") {
         localStorage.clear();
     }
+
+
 
 
 
@@ -223,4 +227,9 @@ $('.lock').click(function() {
     localStorage.setItem("Data", JSON.stringify(entry));
     console.log(localStorage);
 });
+
+$("#clear").click(function() {
+    localStorage.clear();
+    setData();
+})
 
