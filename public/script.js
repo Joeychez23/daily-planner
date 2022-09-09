@@ -167,7 +167,7 @@ let time = setInterval(function(event) {
             $("#5pm").css("background-color", "red");
             timeN = false;
         }
-        if(currT[0] > 5 && AMPM[1] == 'PM') {
+        if(currT[0] > 5 && AMPM[1] == 'PM' && currT[0] != 12) {
             $("#9am").css("background-color", "grey");
             $("#10am").css("background-color", "grey");
             $("#11am").css("background-color", "grey");
@@ -179,6 +179,19 @@ let time = setInterval(function(event) {
             $("#5pm").css("background-color", "grey");
             timeN = false;
         }
+
+        if(currT[0] == 12 && AMPM[1] == 'AM') {
+            $("#9am").css("background-color", "green");
+            $("#10am").css("background-color", "green");
+            $("#11am").css("background-color", "green");
+            $("#12pm").css("background-color", "green");
+            $("#1pm").css("background-color", "green");
+            $("#2pm").css("background-color", "green");
+            $("#3pm").css("background-color", "green");
+            $("#4pm").css("background-color", "green");
+            $("#5pm").css("background-color", "green");
+            timeN = false;
+        }
     }
 
     if(currT[1] == "59" && AMPM[0] == "59") {
@@ -188,9 +201,12 @@ let time = setInterval(function(event) {
     if(currT[0] == 12 && currT[1] == "00" && AMPM[0] == "00" && AMPM[1] == "AM") {
         localStorage.clear();
     }
+
+    console.log(currT);
+    console.log(AMPM);
     
 
-}, 1);
+}, 1000);
 
 
 
