@@ -9,6 +9,7 @@ function setData() {
         console.log(val[i]);
     }
     if(localStorage.length != 1) {
+        localStorage.clear();
         val[0] = {
             AM9: " ",
             AM10: " ",
